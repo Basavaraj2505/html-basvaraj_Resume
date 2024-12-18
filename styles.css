@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700;
+}
+
+#theme-toggle {
+    margin-top: 10px;
+    padding: 7px 15px;
+    background: #FFD700;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#theme-toggle:hover {
+    background: #FFA500;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.option-card {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #004080;
+    padding: 15px 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.option-card:hover {
+    background: #FFD700;
+    color: #333;
+    transform: translateY(-5px);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+.dark-theme header {
+    background: #333;
+}
+
+.dark-theme .hero h2 {
+    color: #FFD700;
+}
+
+.dark-theme .option-card {
+    background: #333;
+    color: #FFD700;
+}
+
+.dark-theme .option-card:hover {
+    background: #FFA500;
+}
